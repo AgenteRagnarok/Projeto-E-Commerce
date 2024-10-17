@@ -1,11 +1,13 @@
-import { Navbar } from "./components/Navbar";
+import Navbar from './components/Navbar/index.tsx';
 import { Home } from "./pages/home";
 import "./index.css";
+import "./components/Navbar/navbar.module.css";
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <Navbar />
+      <div className="bg-gray-100 min-h-screen"></div>
       <Home />
     </>
   );
