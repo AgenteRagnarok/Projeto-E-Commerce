@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar/index.tsx';
-import { Home } from "./pages/home";
+import { Home } from "./pages/homePage/index.tsx";
 import "./index.css";
 import "./components/Navbar/navbar.module.css";
 
