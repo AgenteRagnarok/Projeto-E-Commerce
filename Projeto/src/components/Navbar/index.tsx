@@ -25,9 +25,10 @@ const Navbar = function () {
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-20 items-center justify-between">
-              {/* Botão de menu mobile */}
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              {/* Logo e Botão de Menu Mobile */}
+              <div className="flex items-center space-x-4">
+                {/* Botão de menu mobile */}
+                <Disclosure.Button className="flex items-center justify-center p-2 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white sm:hidden">
                   <span className="sr-only">Abrir menu principal</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -35,10 +36,8 @@ const Navbar = function () {
                     <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
-              </div>
 
-              {/* Logo e Navegação */}
-              <div className="flex flex-1 items-center justify-center sm:justify-start space-x-8">
+                {/* Logo */}
                 <div className="flex items-center">
                   <img
                     src={logo}
@@ -46,27 +45,28 @@ const Navbar = function () {
                     className="h-8 w-auto"
                   />
                   <span className="ml-2 text-2xl font-semibold text-pink-600">
+                    
                   </span>
                 </div>
+              </div>
 
-                {/* Links de Navegação (somente desktop) */}
-                <div className="hidden sm:flex sm:space-x-4">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      aria-current={item.current ? "page" : undefined}
-                      className={classNames(
-                        item.current
-                          ? "text-pink-600 font-semibold"
-                          : "text-gray-600 hover:text-pink-600",
-                        "text-sm font-medium"
-                      )}
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
+              {/* Links de Navegação (somente desktop) */}
+              <div className="hidden sm:flex sm:space-x-4">
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    aria-current={item.current ? "page" : undefined}
+                    className={classNames(
+                      item.current
+                        ? "text-pink-600 font-semibold"
+                        : "text-gray-600 hover:text-pink-600",
+                      "text-sm font-medium"
+                    )}
+                  >
+                    {item.name}
+                  </a>
+                ))}
               </div>
 
               {/* Barra de pesquisa e botões de ação */}
@@ -76,7 +76,7 @@ const Navbar = function () {
                   <input
                     type="text"
                     placeholder="Pesquisar produto..."
-                    className="w-full py-2 pl-4 pr-10 bg-[#f4ebeb] border border-gray-200 rounded-full text-gray-700 placeholder-gray-500 focus:outline-none focus:bg-[#f4ebeb] focus:border-gray-400"
+                    className="w-full py-2 pl-24 pr-14 bg-[#f8f3f3] border-none rounded-md text-gray-700 placeholder-gray-500 focus:outline-none focus:bg-[#e5dddd] focus:border-gray-400"
                   />
                   <MagnifyingGlassIcon className="absolute top-1/2 right-3 w-5 h-5 text-gray-400 transform -translate-y-1/2" />
                 </div>
@@ -88,10 +88,10 @@ const Navbar = function () {
                 >
                   Cadastre-se
                 </a>
-                <button className="px-4 py-2 bg-pink-600 text-white rounded-full hover:bg-pink-700 text-sm font-medium hidden sm:block">
+                <button className="px-9 py-2 bg-primary rounded-s-md rounded-e-md text-quaternaryText text-sm shadow-lg font-medium hidden sm:block">
                   Entrar
                 </button>
-                <button className="relative text-gray-600 hover:text-pink-600">
+                <button className="p-5 text-gray-600 hover:text-pink-600">
                   <img
                     src={carrinho}
                     alt="Carrinho de compras"

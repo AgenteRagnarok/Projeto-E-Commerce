@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* @media screen and (max-width: 768px) { 
+/* 
+@media screen and (max-width: 768px) { 
     .hidden-sm {
         display: block;
     }
@@ -13,4 +13,16 @@
         padding: 0rem;
         border: none;
     }
-}; */
+};  */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding-top: 0;
+    margin-top: 0;
+}
+

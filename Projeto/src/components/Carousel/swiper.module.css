@@ -1,0 +1,9 @@
+/* Indicadores de paginação */
+.swiper-pagination-bullet {
+background: #e5e5e5;
+opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ec4899; /* Rosa */
+}

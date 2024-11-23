@@ -1,5 +1,6 @@
 
 export const Home = () => {
     return <> Navbar 
-    Home</>;
+    Home
+    Carousel</>;
 };
