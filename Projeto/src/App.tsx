@@ -5,19 +5,12 @@ import "./index.css";
 import "./components/Navbar/navbar.module.css";
 import Carousel from './components/Carousel/index.tsx';
 
-const App: React.FC = () => {
-  return (
-      <div className="bg-gray-100 min-h-screen">
-    <><header>
+const App: React.FC = () => { 
+    return ( <>
       <Navbar />
-      </header>
-      <Home />
-      <main>
       <Carousel/>
-      </main>
     </>
-    </div>
-  );
-}
+    );
+    };
 
 export default App;
