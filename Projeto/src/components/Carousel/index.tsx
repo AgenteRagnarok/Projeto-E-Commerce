@@ -1,5 +1,5 @@
 import { useState } from "react";
-import keyboard  from "../../assets/teclado.svg";
+import keyboard from "../../assets/teclado.svg";
 
 const slides = [
   {
@@ -7,7 +7,7 @@ const slides = [
     description:
       "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
     buttonText: "Ver Ofertas",
-    image: "", // Substitua pela URL correta
+    image: keyboard, // Substitua pelo caminho correto da imagem
   },
   {
     title: "Promoção Especial 🤑",
@@ -48,10 +48,12 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full bg-gray-50 py-10">
+    <div className="relative w-full overflow-hidden bg-gray-50 py-10">
       {/* Slides */}
-      <div className="flex transition-transform duration-500 ease-in-out transform"
-           style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      <div
+        className="flex transition-transform duration-500 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -64,7 +66,7 @@ const Carousel = () => {
               </p>
               <h2 className="text-4xl font-bold text-gray-900">{slide.title}</h2>
               <p className="text-gray-600 mt-4">{slide.description}</p>
-              <button className="bg-primary mt-6 px-6 py-2 text-quaternaryText rounded-full shadow-lg">
+              <button className="bg-primary mt-6 px-6 py-2 text-quaternaryText font-semibold rounded-full shadow-lg">
                 {slide.buttonText}
               </button>
             </div>
@@ -72,7 +74,7 @@ const Carousel = () => {
             {/* Imagem */}
             <div className="mt-6 md:mt-0">
               <img
-                src={keyboard}
+                src={slide.image}
                 alt="Slide Image"
                 className="w-full max-w-md rounded-lg shadow-lg object-cover"
               />
@@ -129,8 +131,10 @@ const Carousel = () => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 bg-primary rounded-full ${
-              index === currentIndex ? "bg-pink-500" : "bg-gray-300"
+            className={`w-3 h-3 rounded-full transition-colors ${
+              index === currentIndex
+                ? "bg-primary"
+                : "bg-white border border-pink-500"
             }`}
           />
         ))}

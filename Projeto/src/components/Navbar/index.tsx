@@ -38,11 +38,11 @@ const Navbar = function () {
                 </Disclosure.Button>
 
                 {/* Logo */}
-                <div className="flex items-center">
+                <div className="flex items-center justify-center w-full sm:w-auto">
                   <img
                     src={logo}
                     alt="Digital Store Logo"
-                    className="h-8 w-auto"
+                    className="h-8 sm:h-10"
                   />
                   <span className="ml-2 text-2xl font-semibold text-pink-600">
                     
