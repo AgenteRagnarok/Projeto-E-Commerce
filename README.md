@@ -95,3 +95,4 @@ Este projeto está licenciado sob a MIT License.
 Desenvolvido com ❤️ por Vinicius.
 Se tiver dúvidas ou sugestões, entre em contato comigo no GitHub ou através do e-mail: xyvinicius@email.com.
 
+PS:Esse era o plano do meu projeto mas infelizmente não consegui terminar á tempo,mesmo assim vou continuar estudando para melhorar meu código!!
