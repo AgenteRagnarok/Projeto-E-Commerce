@@ -1,3 +1,5 @@
+** PROJETO ESTÁ NA BRANCH MODIFICAÇÕES!! **
+
 Digital Store - E-commerce
 
 Uma plataforma moderna e responsiva para compras online.
