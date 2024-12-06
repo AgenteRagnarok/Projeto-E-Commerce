@@ -1,5 +1,8 @@
 import { useState } from "react";
 import keyboard from "../../assets/teclado.svg";
+import headphone from "../../assets/headphoneredragon.webp";
+import mouse from "../../assets/mouse_carrossel.jpg";
+import monitor from "../../assets/monitor-alienware-aw3423dw-gallery-1.avif";
 
 const slides = [
   {
@@ -14,21 +17,21 @@ const slides = [
     description:
       "Descontos incríveis nos melhores produtos! Aproveite antes que acabe.",
     buttonText: "Aproveitar",
-    image: "https://via.placeholder.com/300x200", // Substitua pela URL correta
+    image: headphone, // Substitua pela URL correta
   },
   {
     title: "Novidades Tecnológicas 🚀",
     description:
       "Fique por dentro das últimas tendências em tecnologia com preços imbatíveis.",
     buttonText: "Confira",
-    image: "https://via.placeholder.com/300x200", // Substitua pela URL correta
+    image: mouse , // Substitua pela URL correta
   },
   {
     title: "Promoção Imperdível 🎉",
     description:
       "Ofertas exclusivas para você! Descontos imperdíveis nos melhores produtos.",
     buttonText: "Aproveitar",
-    image: "https://via.placeholder.com/300x200", // Substitua pela URL correta
+    image: monitor, // Substitua pela URL correta
   },
 ];
 
@@ -76,7 +79,7 @@ const Carousel = () => {
               <img
                 src={slide.image}
                 alt="Slide Image"
-                className="w-full max-w-md rounded-lg shadow-lg object-cover"
+                className="w-full max-w-md rounded-lg shadow-lg border-opacity-0 object-cover"
               />
             </div>
           </div>
