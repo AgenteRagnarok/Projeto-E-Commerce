@@ -59,36 +59,28 @@ Siga os passos abaixo para clonar e executar o projeto localmente:
 
 Clone o repositório:
 
-bash
-Copiar código
-git clone https://github.com/seu-usuario/digital-store.git
+git bash
+git clone https://github.com/seu-usuario/projeto-e-commerce.git
 Entre no diretório do projeto:
 
-bash
-Copiar código
-cd digital-store
+git bash
+cd projeto-e-commerce
 Instale as dependências:
 
-bash
-Copiar código
+git bash
 npm install
 Inicie o servidor de desenvolvimento:
 
-bash
-Copiar código
+git bash
 npm run dev
 Abra o navegador e acesse:
 
-plaintext
 Copiar código
-http://localhost:5173
 🌟 Funcionalidades Futuras
 Implementação de backend com gerenciamento de dados reais.
 Adição de autenticação para login e cadastro.
 Sistema de pagamento integrado.
 Gerenciamento avançado do carrinho de compras.
-🤝 Contribuições
-Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request com sugestões e melhorias.
 
 📄 Licença
 Este projeto está licenciado sob a MIT License.
