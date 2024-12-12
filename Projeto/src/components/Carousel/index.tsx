@@ -1,37 +1,37 @@
 import { useState } from "react";
-import keyboard from "../../assets/teclado.svg";
-import headphone from "../../assets/headphoneredragon.webp";
-import mouse from "../../assets/mouse_carrossel.jpg";
+import keyboard from "../../assets/K606-R (2).webp";
+import headphone from "../../assets/JBL_QUANTUM_910_Wireless_Product Image_Angle.webp";
+import mouse from "../../assets/HTML Gamer Ninja Shark 3.webp";
 import monitor from "../../assets/monitor-alienware-aw3423dw-gallery-1.avif";
 
 const slides = [
   {
     title: "Queima de Estoque Gamer🔥",
     description:
-      "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
+      "Os melhores Teclados em promocão! Aproveite antes que as ofertas acabem.",
     buttonText: "Ver Ofertas",
-    image: keyboard, // Substitua pelo caminho correto da imagem
+    image: keyboard, 
   },
   {
     title: "Promoção Especial 🤑",
     description:
-      "Descontos incríveis nos melhores produtos! Aproveite antes que acabe.",
+      "Descontos incríveis nos  Headphones! Aproveite!!",
     buttonText: "Aproveitar",
-    image: headphone, // Substitua pela URL correta
+    image: headphone, 
   },
   {
     title: "Novidades Tecnológicas 🚀",
     description:
-      "Fique por dentro das últimas tendências em tecnologia com preços imbatíveis.",
+      "Fique por dentro das últimas tendências em tecnologia em nossos mouses com preços imbatíveis.",
     buttonText: "Confira",
-    image: mouse , // Substitua pela URL correta
+    image: mouse , 
   },
   {
     title: "Promoção Imperdível 🎉",
     description:
-      "Ofertas exclusivas para você! Descontos imperdíveis nos melhores produtos.",
+      "Ofertas exclusivas para você em monitores! Descontos imperdíveis o aguardam.",
     buttonText: "Aproveitar",
-    image: monitor, // Substitua pela URL correta
+    image: monitor, 
   },
 ];
 
@@ -79,7 +79,7 @@ const Carousel = () => {
               <img
                 src={slide.image}
                 alt="Slide Image"
-                className="w-full max-w-md rounded-lg shadow-lg border-opacity-0 object-cover"
+                className="w-full max-w-md object-cover border-0"
               />
             </div>
           </div>

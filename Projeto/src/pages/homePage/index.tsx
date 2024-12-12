@@ -2,5 +2,8 @@
 export const Home = () => {
     return <> Navbar 
     Home
-    Carousel</>;
+    Carousel
+    Footer</>;
 };
+
+export default Home;

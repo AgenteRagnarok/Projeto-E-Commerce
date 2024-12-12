@@ -16,8 +16,12 @@ export default {
       secondaryText: "#B5B6F2",
       tertiaryText: "#4F0F24",
       quaternaryText: "#EFEFFF",
+      quinternaryText: "#1F1F1F",
+      sixternaryText: "#5A5A5A",
+
       primaryBackground: "linear-gradient(90deg, #C92071 0%, #EDABCA 100%)",
       secondaryBackground: "linear-gradient(90deg, #B5B6F2 0%, #EFEFFF 100%)",
+      quinternaryBackground: "#808080",
     },
 
     extend: {},
