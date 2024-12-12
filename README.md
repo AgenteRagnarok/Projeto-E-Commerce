@@ -38,10 +38,8 @@ git bash npm install Inicie o servidor de desenvolvimento:
 
 git bash npm run dev Abra o navegador e acesse:
 
-Copiar código 🌟 Funcionalidades Futuras Implementação de backend com gerenciamento de dados reais. Adição de autenticação para login e cadastro. Sistema de pagamento integrado. Gerenciamento avançado do carrinho de compras.
+Funcionalidades Futuras: Implementação de backend com gerenciamento de dados reais. Adição de autenticação para login e cadastro. Sistema de pagamento integrado. Gerenciamento avançado do carrinho de compras.
 
-📄 Licença Este projeto está licenciado sob a MIT License.
+📄 Licença: Este projeto está licenciado sob a MIT License.
 
-👨‍💻 Desenvolvedor Desenvolvido com ❤️ por Vinicius. Se tiver dúvidas ou sugestões, entre em contato comigo no GitHub ou através do e-mail: xyvinicius@email.com.
-
-PS:Esse era o plano do meu projeto mas infelizmente não consegui terminar á tempo,mesmo assim vou continuar estudando para melhorar meu código!!
+👨‍💻 Desenvolvedor: Desenvolvido por Vinicius. Se tiver dúvidas ou sugestões, entre em contato comigo no GitHub ou através do e-mail: xyvinicius@email.com.
