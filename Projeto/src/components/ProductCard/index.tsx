@@ -8,6 +8,7 @@ const cards = [
     title: "Novo Acer Nitro V15 ANV155158QL",
     buttonText: "Comprar",
     image: Notebook,
+
   },
   {
     tag: "30% OFF",

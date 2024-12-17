@@ -18,7 +18,7 @@ const Footer = () => {
             <a href="https://www.facebook.com/digitalcollegebr?locale=pt_BR" className="#">
               <img src={LogoFacebook} alt="Logo Facebook" />
             </a>
-            <a href="#" className="#">
+            <a href="https://www.instagram.com/digitalcollegebr/?locale=zh-TW&hl=am-et" className="#">
             <img src={LogoInstagram} alt="Logo Instagram" />
             </a>
             <a href="#" className="#">
